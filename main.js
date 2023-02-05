@@ -19,3 +19,24 @@ textButtons.forEach((textButton) => {
     )
     .join("");
 });
+
+// Swiper Code for slide
+
+let swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    599: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1023: {
+      slidesPerView: 4,
+      spaceBetween: 60,
+    },
+  },
+});

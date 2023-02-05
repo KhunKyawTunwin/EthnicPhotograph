@@ -209,6 +209,7 @@ header {
   width: 18rem;
   background: var(--color-bg-2);
   border-radius: 1.3rem;
+  margin-bottom: 3.5rem;
   box-shadow: inset 0 1rem 1rem rgba(0, 0, 0, 0.3);
   border: 1px solid var(--color-bg-4);
 }
@@ -230,7 +231,7 @@ header {
 
 .header__frames {
   position: absolute;
-  top: 90vh;
+  top: 85vh;
   right: 44rem;
   transition: var(--transition);
 }
@@ -319,3 +320,131 @@ header {
 }
 
 /* About Section for pa'o people history */
+
+#about {
+  margin-top: 15rem;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: 10rem 26rem auto;
+  gap: 3rem;
+  position: relative;
+}
+
+.about__title {
+  position: absolute;
+  top: -7rem;
+  z-index: 1;
+}
+
+.about__btn {
+  color: var(--color-primary-variant);
+  align-self: end;
+}
+
+.about__btn:hover {
+  transform: translateY(-1rem);
+  color: var(--color-primary);
+}
+
+.about__image {
+  position: relative;
+}
+
+.about__image-bg {
+  background: var(--color-bg-4);
+  height: 22rem;
+  width: 16rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.about__image-lg {
+  position: relative;
+  left: 1rem;
+  bottom: 1rem;
+  filter: saturate(0) brightness(0.3);
+  transition: 500ms ease;
+}
+
+.about__image-sm {
+  position: absolute;
+  top: 5rem;
+  left: 8rem;
+  width: 22rem;
+  height: 28rem;
+  overflow: hidden;
+  box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 3%;
+  transition: 500ms ease;
+}
+
+.about__image:hover .about__image-sm {
+  opacity: 0;
+}
+
+.about__image:hover .about__image-lg {
+  filter: saturate(1) brightness(1);
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.2);
+  border: 1rem solid var(--color-bg-4);
+  left: 0;
+  bottom: 0;
+}
+
+.about__right {
+  margin-left: 4rem;
+}
+
+.about__right p {
+  margin: 0 4rem 1.5rem 0;
+}
+
+/*  Gallery Section */
+
+#gallery {
+  margin-top: 10rem;
+}
+
+.gallery__head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery__container p {
+  width: 45rem;
+}
+
+.swiper-wrapper {
+  margin-top: 5rem;
+  height: 37rem;
+  padding-bottom: 5rem;
+}
+
+.swiper-slide {
+  border: 0.5rem solid var(--color-bg-4);
+  height: fit-content;
+  max-height: 36rem;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.swiper-slide:hover {
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.swiper-slide img {
+  height: 37rem;
+  filter: saturate(0);
+  transition: var(--transition);
+}
+
+.swiper-slide:hover img {
+  filter: saturate(1);
+}
+
+/* Exhibition Section */
+
+#exhibition {
+  margin-top: 10rem;
+}
