@@ -423,7 +423,8 @@ header {
 
 .swiper-slide {
   border: 0.5rem solid var(--color-bg-4);
-  height: fit-content;
+  /* height: fit-content; */
+  max-width: 20rem;
   max-height: 36rem;
   overflow: hidden;
   transition: var(--transition);
